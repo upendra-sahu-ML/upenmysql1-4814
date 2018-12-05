@@ -24,7 +24,7 @@ pipeline {
           }
           dir ('./charts/upenmysql1-4814') {
             container('jx-base') {
-              sh "make tag"
+              sh "make tag -i"
             }
           }
         }
